@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.christian.acnoride.MainActivity">
+    tools:context="com.example.christian.acnoride.MainMenu">
 
     <Button
         android:id="@+id/start"
@@ -30,6 +30,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/settings"
+        android:onClick="settings"
         app:layout_constraintBottom_toTopOf="@+id/rankings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
