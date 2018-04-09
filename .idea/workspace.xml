@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df0fb96e-4987-4a95-be8c-29c7e4bdf2b8" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Settings.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_menu.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -389,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523248402818</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="linked settings button to corresponding layout page">
+      <created>1523249231500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1523249231500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -449,7 +451,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="main menu intialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="main menu intialized" />
+    <MESSAGE value="linked settings button to corresponding layout page" />
+    <option name="LAST_COMMIT_MESSAGE" value="linked settings button to corresponding layout page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
