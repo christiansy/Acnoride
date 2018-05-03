@@ -12,6 +12,10 @@ import java.util.Random;
  */
 
 
+//change from missile to enemy spawner
+    //vertical movement
+    //change destroy on collision
+    
 public class GameObjectEnemy extends GameObject{
     private int score;
     private int speed;

@@ -7,7 +7,7 @@ import android.graphics.Rect;
  * Created by Christian on 4/29/2018.
  */
 
-
+//finished
 public abstract class GameObject {
     private int x;
     private int y;

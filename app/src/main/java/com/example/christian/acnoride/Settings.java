@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Christian on 4/8/2018.
  */
 
+//settings fragment view
 public class Settings extends AppCompatActivity {
 
     @Override
