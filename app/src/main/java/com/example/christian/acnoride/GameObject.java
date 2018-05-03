@@ -24,18 +24,17 @@ public abstract class GameObject {
     {
         this.y = y;
     }
-    public int getX()
+    public void setHeight(int height)
     {
-        return x;
+        this.height = height;
     }
+    public void setWidth(int width) { this.width = width; }
+    public int getX() { return x; }
     public int getY()
     {
         return y;
     }
-    public int getHeight()
-    {
-        return height;
-    }
+    public int getHeight() { return height; }
     public int getWidth()
     {
         return width;

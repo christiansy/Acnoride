@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 
-//onclick check collision
+//onclick check collision (in game?)
 public class GameObjectPlayerButtons extends GameObject {
 
 
