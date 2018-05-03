@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
  * Created by Christian on 4/29/2018.
  */
 
+
+//gamePanel equivalent
+
 public class Game extends AppCompatActivity {
 
     @Override
