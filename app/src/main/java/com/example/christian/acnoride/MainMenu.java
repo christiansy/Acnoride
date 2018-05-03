@@ -17,6 +17,6 @@ public class MainMenu extends AppCompatActivity {
     public void settings(View view){
         Intent startNewActivity = new Intent(this, Settings.class);
         startActivity(startNewActivity);
-        this.overridePendingTransition(0, 0);
+        //this.overridePendingTransition(0, 0);
     }
 }
