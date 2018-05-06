@@ -16,6 +16,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:text="@string/start"
+        android:onClick="start"
         app:layout_constraintBottom_toTopOf="@+id/settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
