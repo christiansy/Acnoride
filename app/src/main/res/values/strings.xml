@@ -2,9 +2,15 @@
     <string name="app_name">Acnoride</string>
 
     <string name="start">Start</string>
+    <string name="register">Sign Up</string>
+    <string name="login">Login</string>
     <string name="settings">Settings</string>
     <string name="ranks">Rankings</string>
+<<<<<<< HEAD
     <string name="back">Back</string>
     <string name="pause">Pause</string>
     <string name="pointsDisplay">Points</string>
+=======
+    <string name="finish">Finish</string>
+>>>>>>> master
 </resources>
