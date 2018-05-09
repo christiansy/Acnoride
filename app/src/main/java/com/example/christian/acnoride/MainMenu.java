@@ -15,11 +15,11 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
-        //TextView welcomeText = (TextView) findViewById(R.id.welcome);
-        //welcomeText.setText("Welcome back,"+ Login.ACTIVE_PLAYER.getUsername() );
+        TextView welcomeText = (TextView) findViewById(R.id.welcome);
+        welcomeText.setText("Welcome back,"+ Login.ACTIVE_PLAYER.getUsername() );
         //back button
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         //title change
         this.setTitle("Acnoride Menu");
     }

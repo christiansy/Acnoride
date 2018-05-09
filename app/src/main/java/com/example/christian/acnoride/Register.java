@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 public class Register extends AppCompatActivity {
 
-    static Player ACTIVE_PLAYER = null;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,9 +18,30 @@ public class Register extends AppCompatActivity {
     }
 
     public void finish(View view){
-        Intent startNewActivity = new Intent(this, MainMenu.class);
-        startActivity(startNewActivity);
-        this.overridePendingTransition(0, 0);
+        EditText findName = (EditText) findViewById(R.id.regUserName);
+        EditText findPassword = (EditText) findViewById(R.id.regPW);
+
+        String username = findName.getText().toString();
+        String password = findPassword.getText().toString();
+
+        //db player addition
+        Player player = new Player();
+        player.setUsername(username);
+        player.setPassword(password);
+        player.setScore("0");
+        player.setRank("0");
+        PlayerDB db = new PlayerDB(this);
+        Log.d("Player added:", player.toString());
+        db.insertNewPlayer(player);
+
+        //player was inserted into database, make sure its there before continuing
+        Player findPlayer = db.findUsername(player.getUsername());
+        if (findPlayer != null) {
+            Login.ACTIVE_PLAYER = findPlayer;
+            Intent startNewActivity = new Intent(this, MainMenu.class);
+            startActivity(startNewActivity);
+            this.overridePendingTransition(0, 0);
+        }
     }
 
 }
