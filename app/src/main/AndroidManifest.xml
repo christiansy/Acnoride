@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Settings" android:screenOrientation="landscape" />
+        <activity android:name=".Login" android:screenOrientation="landscape" />
+        <activity android:name=".Register" android:screenOrientation="landscape" />
     </application>
 
 </manifest>

@@ -29,7 +29,7 @@ import java.util.Comparator;
             this.setRank("");
         }
 
-
+        //probably dont need this
         public boolean equals(Player player2)
         {
             if(this.username.equals(player2.getUsername())
@@ -94,7 +94,6 @@ import java.util.Comparator;
         public String getRank() {
             return rank;
         }
-
 
 
 
