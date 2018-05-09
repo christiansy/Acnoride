@@ -9,17 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d5250b6-45ba-4995-ae84-d6740df25ef3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Register.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Register.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Settings.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Settings.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_menu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_menu.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/settings.xml" />
-    </list>
+    <list default="true" id="7d5250b6-45ba-4995-ae84-d6740df25ef3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,8 +80,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+            <state relative-caret-position="221">
+              <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
               <folding>
                 <element signature="e#2747#2762#0" expanded="true" />
               </folding>
@@ -2701,8 +2691,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="65" column="37" lean-forward="false" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        <state relative-caret-position="221">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
           <folding>
             <element signature="e#2747#2762#0" expanded="true" />
           </folding>
