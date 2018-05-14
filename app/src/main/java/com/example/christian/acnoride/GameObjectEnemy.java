@@ -31,10 +31,8 @@ public class GameObjectEnemy extends GameObject{
         super.setWidth(w);
         score = s;
 
-        speed = 7 + (int) (rand.nextDouble()*score/30);
+        speed = 15;
 
-        //cap missile speed
-        if(speed>40)speed = 40;
 
         Bitmap[] image = new Bitmap[numFrames];
 
@@ -51,7 +49,7 @@ public class GameObjectEnemy extends GameObject{
     }
     public void update()
     {
-        this.setX(this.getX()-speed);
+        this.setY(this.getY()-speed);
         animation.update();
     }
     public void draw(Canvas canvas)

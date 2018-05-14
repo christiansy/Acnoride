@@ -24,6 +24,14 @@ public abstract class GameObject {
     {
         this.y = y;
     }
+    public void setDX(int dx)
+    {
+        this.dx = dx;
+    }
+    public void setDY(int dy)
+    {
+        this.dy = dy;
+    }
     public void setHeight(int height)
     {
         this.height = height;
@@ -33,6 +41,11 @@ public abstract class GameObject {
     public int getY()
     {
         return y;
+    }
+    public int getDX() { return dx; }
+    public int getDY()
+    {
+        return dy;
     }
     public int getHeight() { return height; }
     public int getWidth()
