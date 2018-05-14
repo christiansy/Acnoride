@@ -21,7 +21,7 @@ public class PlayerDB extends SQLiteOpenHelper {
     private static final String TABLE_PLAYER_INFORMATION = "playerInformation";
 
 
-    // TABLE COLUMN NAMES
+    // PLAYER INFO COLUMNS
     private static final String KEY_ID = "id";
     private static final String KEY_USERNAME = "username";
     private static final String KEY_PASSWORD = "password";
@@ -63,7 +63,6 @@ public class PlayerDB extends SQLiteOpenHelper {
         playerInfo.put(KEY_SCORE, newUser.getScore());
         playerInfo.put(KEY_RANK, newUser.getRank());
 
-
         // Insert the new row, returning the primary key value of the new row
         SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_PLAYER_INFORMATION, null, playerInfo);
@@ -72,6 +71,7 @@ public class PlayerDB extends SQLiteOpenHelper {
 
     public Player findUsername(String username)
     {
+        //Database search query for username
         String query = "Select * FROM " + TABLE_PLAYER_INFORMATION + " WHERE " + KEY_USERNAME + " = \"" + username + "\"";
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(query, null);

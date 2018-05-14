@@ -18,7 +18,7 @@ import java.util.Comparator;
         private String score;
         private String rank;
 
-
+        //default constructor
         public Player()
         {
             //constructor blank user with id -1
@@ -29,25 +29,40 @@ import java.util.Comparator;
             this.setRank("");
         }
 
-        //probably dont need this
-        public boolean equals(Player player2)
-        {
-            if(this.username.equals(player2.getUsername())
-                    && this.password.equals(player2.getPassword())
-                    )/*&& this.prank.equals(player2.getPrank())
-                    && this.rankings.equals(player2.getRankings())
-                    && this.first_name.equals(player2.getFirst_name())
-                    && this.last_name.equals(player2.getLast_name())
-                    && this.email.equals(player2.getEmail())
-                    && this.phone.equals(player2.getPhone())
-                    && this.address.equals(player2.getAddress())
-                    && this.city.equals(player2.getCity())
-                    && this.state.equals(player2.getState())
-                    && this.zip.equals(player2.getZip()))*/
-                return true;
-            else
-                return false;
-        }
+    //Accessors
+    public int getId() {
+        return id;
+    }
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    public String getScore() {
+        return score;
+    }
+    public String getRank() {
+        return rank;
+    }
+
+    //Mutators
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public void setScore(String score) {
+        this.score = score;
+    }
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
 
 
         public String toString()
@@ -72,52 +87,27 @@ import java.util.Comparator;
 //        };
 
 
-        //+++++++++++++++++GETTERS+++++++++++++++++
 
 
-        public int getId() {
-            return id;
-        }
-
-        public String getUsername() {
-            return username;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public String getScore() {
-            return score;
-        }
-
-        public String getRank() {
-            return rank;
-        }
-
-
-
-        //+++++++++++++++++SETTERS+++++++++++++++++
-
-        public void setId(int id) {
-            this.id = id;
-        }
-
-        public void setUsername(String username) {
-            this.username = username;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public void setScore(String score) {
-            this.score = score;
-        }
-
-        public void setRank(String rank) {
-            this.rank = rank;
-        }
+    //probably dont need this
+    public boolean equals(Player player2)
+    {
+        if(this.username.equals(player2.getUsername())
+                && this.password.equals(player2.getPassword())
+                )/*&& this.prank.equals(player2.getPrank())
+                    && this.rankings.equals(player2.getRankings())
+                    && this.first_name.equals(player2.getFirst_name())
+                    && this.last_name.equals(player2.getLast_name())
+                    && this.email.equals(player2.getEmail())
+                    && this.phone.equals(player2.getPhone())
+                    && this.address.equals(player2.getAddress())
+                    && this.city.equals(player2.getCity())
+                    && this.state.equals(player2.getState())
+                    && this.zip.equals(player2.getZip()))*/
+            return true;
+        else
+            return false;
+    }
 
     }
 
