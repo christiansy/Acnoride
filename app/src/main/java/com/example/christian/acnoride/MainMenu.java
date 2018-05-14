@@ -16,7 +16,7 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
         TextView welcomeText = (TextView) findViewById(R.id.welcome);
-        welcomeText.setText("Welcome back,"+ Login.ACTIVE_PLAYER.getUsername() );
+        welcomeText.setText("ACNORIDE" );
         //back button
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -44,7 +44,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void start(View view){
-        Intent startNewActivity = new Intent(this, Game.class);
+        Intent startNewActivity = new Intent(this, Main.class);
         startActivity(startNewActivity);
         this.overridePendingTransition(0, 0);
     }
