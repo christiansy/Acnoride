@@ -51,7 +51,7 @@ public class GameObjectEnemy extends GameObject{
     }
     public void update()
     {
-        this.setX(this.getX()-speed);
+        this.setY(this.getY()-speed);
         animation.update();
     }
     public void draw(Canvas canvas)
