@@ -4,9 +4,11 @@ import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.MainThread;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import java.lang.reflect.Array;
@@ -38,7 +40,6 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     public Game(Context context)
     {
         super(context);
-
 
         //add the callback to the surfaceholder to intercept events
         getHolder().addCallback(this);
@@ -111,6 +112,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 //reset timer
                 missileStartTime = System.nanoTime();
             }
+            Log.i("GameActivity", "ENEMY CREATED");
+
+
+
+
             //loop through every missile and check collision and remove
             for (int i = 0; i < enemies.size(); i++) {
                 //update missile
@@ -126,6 +132,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                     enemies.remove(i);
                     break;
                 }
+            }
+
+
+            if(enemies.size()==0){
+                System.out.println("NO MISSILES");
             }
         }
     }
@@ -305,7 +316,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
 //YEAAAAH
             canvas.scale(scaleFactorX, scaleFactorY);
-            bg.draw(canvas);
+            //bg.draw(canvas);
             player.draw(canvas);
             //draw
             for (GameObjectEnemy e: enemies){
