@@ -19,6 +19,8 @@
         <activity android:name=".Settings"  />
         <activity android:name=".MainMenu"  />
         <activity android:name=".Register"  />
+        <activity android:name=".Main"  />
+        <activity android:name=".Game"  />
     </application>
 
 </manifest>
