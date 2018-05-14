@@ -20,6 +20,10 @@
         <activity android:name=".MainMenu"  />
         <activity android:name=".Register"  />
         <activity android:name=".Main"  />
+<<<<<<< HEAD
+=======
+        <activity android:name=".Game"  />
+>>>>>>> James
     </application>
 
 </manifest>

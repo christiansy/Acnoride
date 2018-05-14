@@ -7,8 +7,12 @@ import android.graphics.Rect;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.MainThread;
+<<<<<<< HEAD
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+=======
+
+>>>>>>> James
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import java.lang.reflect.Array;
@@ -145,7 +149,6 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     public void update()
     {
         if(player.getPlaying()) {
-
             if(botborder.isEmpty())
             {
                 player.setPlaying(false);
@@ -156,44 +159,34 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 player.setPlaying(false);
                 return;
             }
-
             bg.update();
             player.update();
-
             //calculate the threshold of height the border can have based on the score
             //max and min border heart are updated, and the border switched direction when either max or
             //min is met
-
             maxBorderHeight = 30+player.getScore()/progressDenom;
             //cap max border height so that borders can only take up a total of 1/2 the screen
             if(maxBorderHeight > HEIGHT/4)maxBorderHeight = HEIGHT/4;
             minBorderHeight = 5+player.getScore()/progressDenom;
-
             //check bottom border collision
             for(int i = 0; i<botborder.size(); i++)
             {
                 if(collision(botborder.get(i), player))
                     player.setPlaying(false);
             }
-
             //check top border collision
             for(int i = 0; i <topborder.size(); i++)
             {
                 if(collision(topborder.get(i),player))
                     player.setPlaying(false);
             }
-
             //update top border
             this.updateTopBorder();
-
             //udpate bottom border
             this.updateBottomBorder();
-
             //add missiles on timer
             long missileElapsed = (System.nanoTime()-missileStartTime)/1000000;
             if(missileElapsed >(2000 - player.getScore()/4)){
-
-
                 //first missile always goes down the middle
                 if(missiles.size()==0)
                 {
@@ -202,11 +195,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 }
                 else
                 {
-
                     missiles.add(new Missile(BitmapFactory.decodeResource(getResources(),R.drawable.missile),
                             WIDTH+10, (int)(rand.nextDouble()*(HEIGHT - (maxBorderHeight * 2))+maxBorderHeight),45,15, player.getScore(),13));
                 }
-
                 //reset timer
                 missileStartTime = System.nanoTime();
             }
@@ -215,7 +206,6 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
             {
                 //update missile
                 missiles.get(i).update();
-
                 if(collision(missiles.get(i),player))
                 {
                     missiles.remove(i);
@@ -229,14 +219,12 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                     break;
                 }
             }
-
             //add smoke puffs on timer
             long elapsed = (System.nanoTime() - smokeStartTime)/1000000;
             if(elapsed > 120){
                 smoke.add(new Smokepuff(player.getX(), player.getY()+10));
                 smokeStartTime = System.nanoTime();
             }
-
             for(int i = 0; i<smoke.size();i++)
             {
                 smoke.get(i).update();
@@ -257,18 +245,13 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 explosion = new Explosion(BitmapFactory.decodeResource(getResources(),R.drawable.explosion),player.getX(),
                         player.getY()-30, 100, 100, 25);
             }
-
             explosion.update();
             long resetElapsed = (System.nanoTime()-startReset)/1000000;
-
             if(resetElapsed > 2500 && !newGameCreated)
             {
                 newGame();
             }
-
-
         }
-
     }*/
 
     //collision checking
