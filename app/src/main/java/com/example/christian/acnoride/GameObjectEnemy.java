@@ -10,7 +10,7 @@ import java.util.Random;
 /**
  * Created by Christian on 4/29/2018.
  */
-
+//edited by James
 
 //change from missile to enemy spawner
     //vertical movement
@@ -25,10 +25,10 @@ public class GameObjectEnemy extends GameObject{
 
     public GameObjectEnemy(Bitmap res, int x, int y, int w, int h, int s, int numFrames)
     {
-        super.setX(x);
-        super.setY(y);
-        super.setHeight(h);
-        super.setWidth(w);
+        super.x = x;
+        super.y = y;
+        width = w;
+        height = h;
         score = s;
 
         speed = 15;
@@ -49,7 +49,7 @@ public class GameObjectEnemy extends GameObject{
     }
     public void update()
     {
-        this.setY(this.getY()-speed);
+        x-=speed;
         animation.update();
     }
     public void draw(Canvas canvas)
@@ -63,7 +63,7 @@ public class GameObjectEnemy extends GameObject{
     public int getWidth()
     {
         //offset slightly for more realistic collision detection
-        return this.getWidth()-10;
+        return width-10;
     }
 
 }
