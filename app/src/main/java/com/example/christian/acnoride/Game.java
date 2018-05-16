@@ -131,11 +131,11 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 //first missile always goes down the middle
                 if (enemies.size() == 0) {
                     enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.
-                            missile), WIDTH + 10, HEIGHT / 2, 45, 15, player.getScore(), 1));
+                            missile), WIDTH / 2, HEIGHT * 10, 45, 15, player.getScore(), 1));
                 } else {
 
                     enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.missile),
-                            WIDTH + 10, (int) (rand.nextDouble() * (HEIGHT)), 45, 15, player.getScore(), 1));
+                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 10, 45, 15, player.getScore(), 1));
                 }
 
                 //reset timer
@@ -154,7 +154,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                     break;
                 }
                 //remove missile if it is way off the screen
-                if (enemies.get(i).getX() < -45) {
+                if (enemies.get(i).getY() < -45) {
                     enemies.remove(i);
                     Log.i("GameActivity", "ENEMY REMOVED");
                     break;

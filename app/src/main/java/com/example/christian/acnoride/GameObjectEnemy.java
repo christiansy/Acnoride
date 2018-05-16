@@ -40,7 +40,7 @@ public class GameObjectEnemy extends GameObject{
 
         for(int i = 0; i<image.length;i++)
         {
-            image[i] = Bitmap.createBitmap(spritesheet, 0, i*this.getHeight(), this.getWidth(), this.getHeight());
+            image[i] = Bitmap.createBitmap(spritesheet, i*width, 0, width, height);
         }
 
         animation.setFrames(image);
@@ -49,7 +49,7 @@ public class GameObjectEnemy extends GameObject{
     }
     public void update()
     {
-        x-=speed;
+        y-=speed;
         animation.update();
     }
     public void draw(Canvas canvas)
@@ -65,7 +65,12 @@ public class GameObjectEnemy extends GameObject{
         //offset slightly for more realistic collision detection
         return width-10;
     }
-
+    @Override
+    public int getHeight()
+    {
+        //offset slightly for more realistic collision detection
+        return height-10;
+    }
 }
 
 

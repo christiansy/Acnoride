@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 /**
- * Created by Christian on 5/5/2018.
+ * Created by Christian on 5/5/2018
  */
     public class Player {
         private int id;
