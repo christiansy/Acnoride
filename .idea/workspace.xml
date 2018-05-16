@@ -9,7 +9,19 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acea0d97-a465-47d1-ae4f-7cad2d6cf48f" name="Default" comment="" />
+    <list default="true" id="acea0d97-a465-47d1-ae4f-7cad2d6cf48f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectLaneThreshold.java" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +39,30 @@
       <file leaf-file-name="GameObjectPlayerButtons.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectPlayerButtons.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameObjectEnemy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectEnemy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameObjectLaneThreshold.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectLaneThreshold.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="17" />
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +73,8 @@
       <file leaf-file-name="GamePlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GamePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="-204">
+              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,89 +82,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Login.java">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="84" column="118" lean-forward="false" selection-start-line="84" selection-start-column="118" selection-end-line="84" selection-end-column="118" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/NewThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Settings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Animation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Animation.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Background.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Background.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,6 +105,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2161,13 +2134,14 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectPlayerButtons.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectEnemy.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Background.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObject.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GamePlayer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Player.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Settings.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Animation.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GamePlayer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectLaneThreshold.java" />
       </list>
     </option>
   </component>
@@ -2408,12 +2382,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32449856" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908162" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2439,16 +2413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -2457,32 +2421,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectEnemy.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectPlayerButtons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GamePlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2492,37 +2436,17 @@
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/NewThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        <state relative-caret-position="306">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2535,6 +2459,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Animation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Background.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2543,21 +2475,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Animation.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/PlayerDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="8" column="3" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="84" column="118" lean-forward="false" selection-start-line="84" selection-start-column="118" selection-end-line="84" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GamePlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectPlayerButtons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="39" lean-forward="false" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectLaneThreshold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/christian/acnoride/GameObjectEnemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

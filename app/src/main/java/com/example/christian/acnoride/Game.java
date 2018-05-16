@@ -31,11 +31,17 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     private NewThread thread;
     private Background bg;
     private GamePlayer player;
+    private GameObjectLaneThreshold gameBar;
     private ArrayList<GameObjectEnemy> enemies;
 
     private Random rand = new Random();
 
     private long enemyStartTime;
+
+    //button enemy interaction algorithim part 1
+    boolean canBeDestroyed = false;
+
+    //
 
     public Game(Context context)
     {
@@ -76,6 +82,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
         bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.grassbg1));
         player = new GamePlayer(BitmapFactory.decodeResource(getResources(), R.drawable.helicopter), 65, 25, 3);
+        gameBar = new GameObjectLaneThreshold(BitmapFactory.decodeResource(getResources(),R.drawable.greybar1),1000,35,1);
         bg.setVector(MOVESPEED);
         enemies = new ArrayList<GameObjectEnemy>();
         enemyStartTime = System.nanoTime();
@@ -165,7 +172,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     }
 
     @Override
-    public void draw(Canvas canvas)
+    public void draw(Canvas canvas) //treat this as a warning code WILL compile and run!!!
     {
         //super.draw(canvas);
         final float scaleFactorX = getWidth()/(WIDTH*1.f);
@@ -176,6 +183,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
             canvas.scale(scaleFactorX, scaleFactorY);
             bg.draw(canvas);
             player.draw(canvas);
+            gameBar.draw(canvas);
             //draw
             for (GameObjectEnemy e: enemies){
                 e.draw(canvas);
@@ -183,8 +191,5 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
             canvas.restoreToCount(savedState);
         }
-        //super.draw(canvas);//???
     }
-
-
 }
