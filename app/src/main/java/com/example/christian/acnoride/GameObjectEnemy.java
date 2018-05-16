@@ -22,6 +22,8 @@ public class GameObjectEnemy extends GameObject{
     private Random rand = new Random();
     private Animation animation = new Animation();
     private Bitmap spritesheet;
+    private boolean canBeDestroyed;
+
 
     public GameObjectEnemy(Bitmap res, int x, int y, int w, int h, int s, int numFrames)
     {
@@ -31,7 +33,7 @@ public class GameObjectEnemy extends GameObject{
         height = h;
         score = s;
 
-        speed = 15;
+        speed = 25;
 
 
         Bitmap[] image = new Bitmap[numFrames];
@@ -45,7 +47,7 @@ public class GameObjectEnemy extends GameObject{
 
         animation.setFrames(image);
         animation.setDelay(100-speed);
-
+        canBeDestroyed = false;
     }
     public void update()
     {
@@ -70,6 +72,13 @@ public class GameObjectEnemy extends GameObject{
     {
         //offset slightly for more realistic collision detection
         return height-10;
+    }
+    public boolean getDestroyable(){
+        return this.canBeDestroyed;
+    }
+    public void setDestroyable(boolean newBoolean)
+    {
+        canBeDestroyed = newBoolean;
     }
 }
 

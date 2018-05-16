@@ -16,7 +16,7 @@ public class GameObjectLaneThreshold extends GameObject{
     public GameObjectLaneThreshold(Bitmap res, int w, int h, int numFrames) {
 
         super.setX(0);
-        super.setY(350);
+        super.setY(35);
         super.setHeight(h);
         super.setWidth(w);
 

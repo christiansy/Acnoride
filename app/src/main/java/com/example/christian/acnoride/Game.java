@@ -39,8 +39,8 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     private long enemyStartTime;
 
     //button enemy interaction algorithim part 1
-    boolean canBeDestroyed = false;
-
+    private boolean canBeDestroyed = false;
+    private boolean screenPress = false;
     //
 
     public Game(Context context)
@@ -80,9 +80,9 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     @Override
     public void surfaceCreated(SurfaceHolder holder){
 
-        bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.grassbg1));
+        bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.blankcanvas));
         player = new GamePlayer(BitmapFactory.decodeResource(getResources(), R.drawable.helicopter), 65, 25, 3);
-        gameBar = new GameObjectLaneThreshold(BitmapFactory.decodeResource(getResources(),R.drawable.greybar1),1000,35,1);
+        gameBar = new GameObjectLaneThreshold(BitmapFactory.decodeResource(getResources(),R.drawable.greybar1),1000,70,1);
         bg.setVector(MOVESPEED);
         enemies = new ArrayList<GameObjectEnemy>();
         enemyStartTime = System.nanoTime();
@@ -97,24 +97,35 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     @Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        if(event.getAction()==MotionEvent.ACTION_DOWN){
+        if(event.getAction()==MotionEvent.ACTION_DOWN ){ //User presses screen
             if(!player.getPlaying()) {
                 player.setPlaying(true);
                 player.setUp(true);
+                screenPress = true;
             }
             if(player.getPlaying()) {
                 player.setUp(true);
             }
+            screenPress = true;
             return true;
         }
 
-        if(event.getAction()==MotionEvent.ACTION_UP)
+        if(event.getAction()==MotionEvent.ACTION_UP)   //user is not pressing screen
         {
             player.setUp(false);
+            screenPress = false;
             return true;
         }
 
-        return super.onTouchEvent(event);
+        return screenPress;
+    }
+
+    public void destroyEnemy(boolean a, boolean b, GameObjectEnemy e)
+    {
+        if (screenPress  && canBeDestroyed)
+        {
+            enemies.remove(e);
+        }
     }
 
     public void update() {
@@ -124,18 +135,17 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
             player.update();
 
             //add missiles on timer
-            long missileElapsed = (System.nanoTime() - enemyStartTime) / 1000000;
-            if (missileElapsed > (2000 - player.getScore() / 4)) {
+            long timeElapsed = (System.nanoTime() - enemyStartTime) / 800000;
+            if (timeElapsed > (2000 - player.getScore() / 4)) {
 
                 System.out.println("making enemy");
                 //first missile always goes down the middle
                 if (enemies.size() == 0) {
-                    enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.
-                            missile), WIDTH / 2, HEIGHT * 10, 45, 15, player.getScore(), 1));
+                    enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.android),
+                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 113, 113, player.getScore(), 1));
                 } else {
-
-                    enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.missile),
-                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 10, 45, 15, player.getScore(), 1));
+                    enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.android),
+                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 113, 113, player.getScore(), 1));
                 }
 
                 //reset timer
@@ -148,13 +158,14 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 //update missile
                 enemies.get(i).update();
 
-                if (collision(enemies.get(i), player)) {
-                    enemies.remove(i);
-                    player.setPlaying(false);
-                    break;
+                if (collision(enemies.get(i), gameBar)) {
+                    canBeDestroyed = true;
+                    destroyEnemy(canBeDestroyed, screenPress, enemies.get(i));
+                    //player.setPlaying(false); //game over
                 }
+
                 //remove missile if it is way off the screen
-                if (enemies.get(i).getY() < -45) {
+                if (enemies.get(i).getY() < -200) {
                     enemies.remove(i);
                     Log.i("GameActivity", "ENEMY REMOVED");
                     break;
@@ -182,7 +193,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
             final int savedState = canvas.save();
             canvas.scale(scaleFactorX, scaleFactorY);
             bg.draw(canvas);
-            player.draw(canvas);
+            //player.draw(canvas);
             gameBar.draw(canvas);
             //draw
             for (GameObjectEnemy e: enemies){

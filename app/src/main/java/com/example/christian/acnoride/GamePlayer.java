@@ -49,19 +49,17 @@ public class GamePlayer extends GameObject{
         animation.update();
 
         if(up){
-            //dy -=1;
-            super.setDY(super.getDY()-1);
+            dy -=1;
         }
         else{
-            //dy +=1;
-            super.setDY(super.getDY()+1);
+            dy +=1;
         }
 
         if(super.getDY()>14)super.setDY(14);
         if(super.getDY()<-14)super.setDY(-14);
 
-        //y += dy*2;
-        super.setY(super.getDY()*2);
+        y += dy*2;
+
 
     }
 
