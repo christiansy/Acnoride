@@ -6,15 +6,16 @@ import android.graphics.Rect;
 /**
  * Created by Christian on 4/29/2018.
  */
+//edited by James
 
 //finished
 public abstract class GameObject {
-    private int x;
-    private int y;
-    private int dy;
-    private int dx;
-    private int width;
-    private int height;
+    protected int x;
+    protected int y;
+    protected int dy;
+    protected int dx;
+    protected int width;
+    protected int height;
 
     public void setX(int x)
     {

@@ -3,8 +3,11 @@ package com.example.christian.acnoride;
 /**
  * Created by Christian on 5/2/2018.
  */
+//edited by James
 
 //tentative, may not need
+
+//--UPDATE WE DID NEED THIS!!!!--
 import android.graphics.Bitmap;
 
 public class Animation {

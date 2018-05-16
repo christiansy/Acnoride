@@ -11,6 +11,7 @@ import android.widget.TextView;
 /**
  * Created by Christian on 4/8/2018.
  */
+//edited by James
 
 //settings fragment view
 public class Settings extends AppCompatActivity {

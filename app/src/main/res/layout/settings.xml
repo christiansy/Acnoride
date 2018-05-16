@@ -92,5 +92,6 @@
         app:layout_constraintStart_toEndOf="@+id/difficulty"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25" />
+>>>>>>> master
 
 </android.support.constraint.ConstraintLayout>

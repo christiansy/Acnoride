@@ -2,6 +2,7 @@ package com.example.christian.acnoride;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+//edited by James
 
 public class Background {
 

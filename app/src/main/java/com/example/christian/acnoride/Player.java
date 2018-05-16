@@ -9,8 +9,6 @@ import java.util.Comparator;
 /**
  * Created by Christian on 5/5/2018.
  */
-
-
     public class Player {
         private int id;
         private String username;
@@ -63,8 +61,6 @@ import java.util.Comparator;
         this.rank = rank;
     }
 
-
-
         public String toString()
         {
             return  "User ID:\t" + this.id + "\n" +
@@ -86,9 +82,6 @@ import java.util.Comparator;
 //            }
 //        };
 
-
-
-
     //probably dont need this
     public boolean equals(Player player2)
     {
@@ -108,6 +101,5 @@ import java.util.Comparator;
         else
             return false;
     }
-
-    }
+  }
 
