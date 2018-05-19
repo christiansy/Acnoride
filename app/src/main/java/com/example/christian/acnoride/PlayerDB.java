@@ -3,7 +3,7 @@ package com.example.christian.acnoride;
 /**
  * Created by Christian on 5/5/2018.
  */
-
+//edited by James
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

@@ -16,7 +16,7 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
         TextView welcomeText = (TextView) findViewById(R.id.welcome);
-        welcomeText.setText("ACNORIDE" );
+        welcomeText.setText("    ACNORIDE" );
         //back button
 //        getSupportActionBar().setDisplayShowHomeEnabled(true);
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);

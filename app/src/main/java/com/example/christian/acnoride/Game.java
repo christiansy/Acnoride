@@ -10,18 +10,20 @@ import android.view.SurfaceView;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.MainThread;
-
+import android.graphics.Typeface;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.util.Log;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
+import android.media.MediaPlayer;
+import android.media.MediaPlayer.OnErrorListener;
 
 /**
  * Created by Christian on 4/29/2018.
  */
 //edited by James
-
-//gamePanel equivalent
 
 public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
@@ -33,7 +35,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     private GamePlayer player;
     private GameObjectLaneThreshold gameBar;
     private ArrayList<GameObjectEnemy> enemies;
-
+    int total_score_counter = 0;
     private Random rand = new Random();
 
     private long enemyStartTime;
@@ -120,15 +122,19 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
         return screenPress;
     }
 
-    public void destroyEnemy(boolean a, boolean b, GameObjectEnemy e)
+    public void destroyEnemy(boolean a, boolean b, GameObjectEnemy e, boolean c)
     {
         if (screenPress  && canBeDestroyed)
         {
             enemies.remove(e);
+            c = true;
+            total_score_counter += 25;
         }
     }
 
     public void update() {
+        boolean destroyed = false;
+
         if (player.getPlaying()) {
 
             bg.update();
@@ -142,10 +148,10 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
                 //first missile always goes down the middle
                 if (enemies.size() == 0) {
                     enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.android),
-                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 113, 113, player.getScore(), 1));
+                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 110, 110, player.getScore(), 1));
                 } else {
                     enemies.add(new GameObjectEnemy(BitmapFactory.decodeResource(getResources(), R.drawable.android),
-                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 113, 113, player.getScore(), 1));
+                            (int) (rand.nextDouble() * (WIDTH)), HEIGHT + 5, 110, 110, player.getScore(), 1));
                 }
 
                 //reset timer
@@ -160,14 +166,19 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
 
                 if (collision(enemies.get(i), gameBar)) {
                     canBeDestroyed = true;
-                    destroyEnemy(canBeDestroyed, screenPress, enemies.get(i));
+                    destroyEnemy(canBeDestroyed, screenPress, enemies.get(i),destroyed);
                     //player.setPlaying(false); //game over
                 }
-
+                if (destroyed == true)
+                {
+                    total_score_counter += 25;
+                }
+                destroyed = false;
                 //remove missile if it is way off the screen
                 if (enemies.get(i).getY() < -200) {
                     enemies.remove(i);
                     Log.i("GameActivity", "ENEMY REMOVED");
+                    total_score_counter -= 25;
                     break;
                 }
             }
@@ -199,8 +210,28 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
             for (GameObjectEnemy e: enemies){
                 e.draw(canvas);
             }
-
+            drawText(canvas);
             canvas.restoreToCount(savedState);
+        }
+    }
+
+    public void drawText(Canvas canvas)
+    {
+        Paint paint = new Paint();
+        paint.setColor(Color.BLACK);
+        paint.setTextSize(30);
+        paint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
+        canvas.drawText("SCORE: " + total_score_counter, 10, HEIGHT - 10, paint);
+        if(!player.getPlaying())
+        {
+            Paint paint1 = new Paint();
+            paint1.setTextSize(40);
+            paint1.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
+            canvas.drawText("PRESS TO START", WIDTH/2-50, HEIGHT/2, paint1);
+
+            paint1.setTextSize(20);
+            canvas.drawText("PRESS THE SCREEN WHEN THE ANDROIDS", WIDTH/2-50, HEIGHT/2 + 20, paint1);
+            canvas.drawText("HIT THE BAR", WIDTH/2-50, HEIGHT/2 + 40, paint1);
         }
     }
 }
